@@ -1,0 +1,33 @@
+* {
+  border: 1px solid #000;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+}
+
+.header p,
+.header span {
+  font-size: 32px;
+}
+
+.baguncinha {
+  color: #5b21b6;
+}
+
+.cartinhas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nome {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
