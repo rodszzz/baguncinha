@@ -27,7 +27,16 @@
   justify-content: space-around;
 }
 
-img {
+.fota {
   height: 200px;
   width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carta-pessoa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
