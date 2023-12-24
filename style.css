@@ -40,6 +40,10 @@ ul {
   margin: 10px;
 }
 
+li {
+  text-align: justify;
+}
+
 .nome {
   display: flex;
   justify-content: space-around;
@@ -63,18 +67,12 @@ ul {
   border: 1px solid #000;
 }
 
-.mady {
+.mady,
+.rods {
   animation: fadeIn 1s;
 }
 
-.rhua {
-  animation: fadeIn 3s;
-}
-
+.rhua,
 .gabo {
-  animation: fadeIn 5s;
-}
-
-.rods {
-  animation: fadeIn 7s;
+  animation: fadeIn 3s;
 }
