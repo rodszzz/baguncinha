@@ -2,9 +2,20 @@
 /*   border: 1px solid #000; */
 /* } */
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .header {
   display: grid;
   justify-items: center;
+  /* animation: fadeIn 3s; */
 }
 
 .header p,
@@ -50,4 +61,20 @@ ul {
   justify-content: center;
   align-items: center;
   border: 1px solid #000;
+}
+
+.mady {
+  animation: fadeIn 1s;
+}
+
+.rhua {
+  animation: fadeIn 3s;
+}
+
+.gabo {
+  animation: fadeIn 5s;
+}
+
+.rods {
+  animation: fadeIn 7s;
 }
