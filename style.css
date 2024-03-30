@@ -78,6 +78,11 @@ ul {
   margin: 10px;
 }
 
+li, .nome {
+  /* background-color: white; */
+  color: white;
+}
+
 .box-cartinhas {
   display: flex;
   flex-wrap: wrap;
