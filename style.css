@@ -128,7 +128,15 @@ li, .nome {
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
+.fa-github-alt {
+  color: #222222;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
 
+.fa-github-alt:hover {
+  transform: rotate(360deg) scale(1.2);
+}
 
 
 
