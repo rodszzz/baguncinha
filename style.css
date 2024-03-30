@@ -18,12 +18,121 @@ html {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
+  gap: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  gap: 0;
+  border: 0;
+  padding: 0;
 }
 
 .header {
+  grid-area: header;
+}
+
+.box-cartinhas {
+  grid-area: box-cartinhas;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.fota {
+  max-width: 300px;
+  height: 600px;
+}
+
+.grid-container {
+  grid-template-areas: 
+    "header header header"
+    "box-cartinhas box-cartinhas box-cartinhas"
+    "footer footer footer"
+  ;
+  gap: 0;
+  border: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.header > p,
+.footer > p,
+.carta-pessoa {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
+.box-cartinhas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.baguncinha {
+  color: blueviolet;
+}
+
+.mady,
+.rods {
+  animation: fadeIn 1s;
+}
+
+.rhua,
+.gabo {
+  animation: fadeIn 3s;
+}
+
+.box-cartinhas {
+  background: linear-gradient(270deg, #361565, #4b2a16, #bd5dbc, #dd6405);
+  background-size: 800% 800%;
+
+  -webkit-animation: gradienteCores 9s ease infinite;
+  -moz-animation: gradienteCores 9s ease infinite;
+  animation: gradienteCores 9s ease infinite;
+}
+
+@-webkit-keyframes gradienteCores {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradienteCores {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradienteCores {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+
+
+/* codigo antigo >>> */
+
+/* .header {
   display: grid;
   justify-items: center;
-  /* animation: fadeIn 3s; */
+  animation: fadeIn 3s;
 }
 
 .header p,
@@ -60,8 +169,8 @@ li {
 .fota {
   height: 200px;
   width: 200px;
-  /* max-width: 200px; */
-  /* max-height: 200px; */
+  max-width: 200px;
+   max-height: 200px;
   display: flex;
   justify-content: space-around;
 }
@@ -83,4 +192,4 @@ li {
 .rhua,
 .gabo {
   animation: fadeIn 3s;
-}
+} */
